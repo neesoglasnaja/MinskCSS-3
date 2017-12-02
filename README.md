@@ -1,9 +1,8 @@
-# Time Estimation: Short Cookbook for Developers
-Slides for the talk on [FrontTalks 2017](http://fronttalks.ru/).
+# Оценка фронтенда: перестаем тыкать пальцем в небо
+Слайды выступления на [MinskCSS #3 Meetup](https://minskcss.timepad.ru/event/604963/).
 
 
-Let's be honest: there is no developer in the world who have never ever missed a deadline. Modern frontend is complicated and an obvious task could turn out as a full code refactoring of the module or even the whole project. And sometimes there is no way to estimate so-called "unknown" tasks.
-In my talk I'll give a bunch of recipes of how to make the process of estimation simpler and clearer for developers and to stop shooting in the dark with numbers.
+Давайте будем честны: нет такого разработчика, который хотя бы раз за свою карьеру не лажал со сроками сдачи проекта. Я расскажу о своем личном опыте оценки фронтендовых задач и о том, как отказаться от распространенного метода оценки под названием "пальцем в небо". Собрав это в некий сборник советов и практик, которые мы успешно (и не очень) применяем в нашей компании, я раскрою тайну, что (и почему) отвечать на такие животрепещущие вопросы как "Когда ты закончишь эту задачу?" и "Сколько это потребует времени?"
 
 
 ## Что еще посмотреть по теме
@@ -13,8 +12,6 @@ In my talk I'll give a bunch of recipes of how to make the process of estimation
 * [Оценки имеют значение](https://www.slideshare.net/VLDCORP/ss-10635744) (SlideShare)
 * [Оценка задач, выполняемых по итеративной разработке](https://www.slideshare.net/ExigenServices/ss-26460568) (SlideShare) 
 * [Как дать адекватную оценку времени, когда неопределённость бьёт по башке](https://habrahabr.ru/post/308494/) (Хабр)
-
-Amazing pixel art by [Octavi Navarro](http://www.pixelshuh.com/) and [Joy Intermedia](https://dribbble.com/shots/1337078--animated-Designer-vs-Developer)
 
 ## How to launch slides
 ### 1. View the presentation

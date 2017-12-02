@@ -1,5 +1,6 @@
+@import 'D:\Git\MinskCSS#3\node_modules\stylus\lib\functions';
 .slide::after {
-  background: #a11212;
+  background: #1471b6;
   height: 75px;
 }
 .slide::before {
@@ -9,7 +10,7 @@
   height: 50px;
 }
 .slide h2 {
-  color: #a11212;
+  color: #1471b6;
 }
 .slide .formula {
   font-size: 48px;
@@ -64,7 +65,7 @@
   color: #999;
 }
 .progress {
-  border-color: #a11212 rgba(0,0,0,0) #a11212 #a11212;
+  border-color: #1471b6 rgba(0,0,0,0) #1471b6 #1471b6;
 }
 .tag {
   color: #ad1531;
@@ -96,7 +97,7 @@
   opacity: 0;
 }
 .slide.menu-slide .selected-item {
-  background-color: #a11212;
+  background-color: #1471b6;
   display: inline-block;
 }
 .slide.menu-slide .transparent {
@@ -105,7 +106,7 @@
 .slide.label-header h2 {
   display: inline-block;
   padding: 10px 30px;
-  background-color: #a11212;
+  background-color: #1471b6;
   color: #fff;
 }
 .slide.label-header h2.shout {
@@ -140,14 +141,8 @@ figcaption {
   line-height: 1.6;
   margin-top: 40px !important;
 }
-figcaption:before {
-  content: "—";
-  position: absolute;
-  top: 0;
-  left: -25px;
-}
 .label {
-  background-color: #a11212;
+  background-color: #1471b6;
   color: #fff;
   padding: 0 10px;
   display: inline-block;
