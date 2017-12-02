@@ -1,0 +1,188 @@
+include ./blocks/slide.jade
+include ./blocks/cover.jade
+include ./blocks/quote.jade
+include ./blocks/frame.jade
+
+- var title = "Time Estimation: Cookbook&nbsp;for&nbsp;Developers"
+
+doctype html
+html(lang='ru')
+  head
+    title !{title}
+    meta(charset='utf-8')
+    meta(http-equiv='x-ua-compatible', content='ie=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel="stylesheet", href="vendor/highlight.css")
+    link(rel='stylesheet', href='shower/themes/ribbon/styles/screen-16x10.css')
+    link(rel='stylesheet', href='theme.css')
+    link(rel='stylesheet', href='slides.css')
+  body.shower.list
+    header.caption
+      h1 !{title}
+    +slide({name: 'cover', header: title, classes:'cover'})
+      p Aleksandra Shinkevich (
+        a(href='https://twitter.com/neesoglasnaja' target="_blank") @neesoglasnaja
+        | )
+      +cover('pictures/cover.jpg')
+    +slide({header: "About me", classes: "label-header white"})
+      ul 
+        li Lead Frontend Developer, LOVATA
+        li Full-stack MEAN Developer
+      p
+        img.logo(src="pictures/minskcss.png")
+        img.logo(src="pictures/minskjs.png")
+        img.logo(src="pictures/css-minsk-js.svg")
+      +cover('pictures/white-cover.jpg')
+    +slide({header: "<span class='label'>x3</span>", shout: true})
+      +cover('pictures/blur-cover.jpg')
+    +slide({header: "Are you good at time estimation?", classes: "label-header"})
+      +cover('pictures/deadline.jpg')
+    +slide({header: 'Myers–Briggs Type Indicator', classes: "label-header"})
+      table.next
+        thead
+          tr
+            th Sensing
+            th Intuition
+        tbody.next
+          tr
+            td The reality of how things are
+            td Possibilities of how things could be
+          tr
+            td Facts and details
+            td Connection between things
+          tr
+            td Specific, literal
+            td Metaphoric, poetic
+          tr
+            td Real: color, sound, shape
+            td Abstract: time, ideas
+      p.next
+        a(href="https://en.wikipedia.org/wiki/Myers%E2%80%93Briggs_Type_Indicator") Wikipedia
+        |  (en)
+    +slide({})
+      +cover('pictures/types.jpg')
+    +slide({header: "<span class='label'>Time is money</span>", shout: true})
+      +cover('pictures/blur-cover.jpg')
+    +slide({header: "Why again", classes: "label-header"})
+      ul
+        li.next To sell your time to a client
+        li.next The list of tasks should be known
+        li.next To plan your or other's work
+    +slide({header: "Types of estimation", classes: "label-header"})
+      ul
+        li.next Preliminary estimation
+          span.next  — high-level estimation
+        li.next Accurate estimation
+          span.next  — low-level estimation
+        li.next Revaluation of timings
+          span.next  — something has changed (specifications, team, etc.)
+    +slide({header: "Common mistakes", classes: "label-header"})
+      ul
+        li.next People do mistakes
+        li.next Lack of information or insufficient list of tasks
+        li.next Risks are not included
+        li.next It's hard to estimate new things: technologies, third-party API, etc.
+        li.next Every developer is good (and bad) at something
+        li.next Low personal responsibility
+    +slide({header: "<span class='label'>How to learn</span>", shout: true, classes: 'cover'})
+      +cover('pictures/blur-cover.jpg')
+    +slide({header: "Step 0. Track your time", classes: "label-header"})
+      +cover('pictures/slides/0.jpg')
+      ul.next
+        li
+          a(href="https://zapier.com/blog/best-time-tracking-apps/" target="_blank") The 20 Best Time-Tracking Apps
+          |  (article)
+      p.next.center
+        img(src="pictures/toggl.jpg" width="250")
+    +slide({header: "1. Make everything clear", classes: "label-header"})
+      +cover('pictures/slides/1.jpg')
+      ul
+        li.next Ask questions
+        li.next Find all bottlenecks
+        li.next Give best and worst estimations instead of an exact number
+    +slide({header: "2. Be more detailed", classes: "label-header"})
+      +cover('pictures/slides/2.jpg')
+      ul
+        li.next Decompose high-level tasks
+        li.next Think of the (exact) implementation
+        li.next Do not decompose everything
+    +slide({header: "3. Think together", classes: "label-header"})
+      +cover('pictures/slides/3.jpg')
+      ul
+        li.next Assign time estimations to a few developers
+        li.next Do time estimation reviews
+    +slide({header: "4. Make risks visible", classes: "label-header"})
+      +cover('pictures/slides/4.jpg')
+      ul
+        li.next Disclose a particularly unpredictible tasks
+        li.next Every member of the team should be aware of all risks
+        li.next Do research before implementing 'unknown' tasks
+        li.next Don't forget about timing revaluation
+    +slide({header: "5. Do not forget about youself", classes: "label-header"})
+      +cover('pictures/slides/5.jpg')
+      ul
+        li.next Remember, you don't spend 100% of your working hours on coding
+        ul
+          li.next Reading docs, API refs, etc.
+          li.next Deploy, git, code reviews
+          li.next Testing
+          li.next Meetings
+          li.next Learning
+          li.next Coffee/cookies, emails, small talks, procrastination
+    +slide({header: "6. Re-think your timings", classes: "label-header"})
+      +cover('pictures/slides/6.jpg')
+      ul
+        li.next Confirm an estimation before you start to work on the features
+        li.next Discuss excact implementation with the team
+    +slide({header: "7. Scream when it's crucial", classes: "label-header"})
+      +cover('pictures/slides/7.jpg')
+      ul
+        li.next Don't be afraid of asking for help
+        li.next Inform your team/PM/client about time issues as soon as you get the idea you'll have them
+        li.next Team/PM/client are humans and you could convince them to make a different decision/timings/etc.
+    +slide({header: "8. Analyze your work", classes: "label-header"})
+      +cover('pictures/slides/8.jpg')
+      ul
+        li.next Time estimation is not about predictions
+        li.next Gather your experiense and analyze estimated and logged time
+        li.next Do "retro" on over- and underestimated tasks
+        li.next Calculate your index of estimation errors
+    +slide({header: "Index of estimation error", classes: "label-header"})
+      table.formula
+        tr
+          th(rowspan="2") k =
+          td logged time
+        tr
+          td estimated time
+    +slide({header: "Bonus. PM's tips", classes: "label-header"})
+      ul
+        li.next Improve communicative skills (yours or/and your team)
+        li.next Motivate your team to learn how to estimate
+        li.next Try to group people in the office by some attribute (departments/projects)
+        li.next Implement different development methodologies (waterfall, agile, extreme programming)
+    +slide({header: "What's next?", classes: 'label-header'})
+      figure
+        blockquote 
+          p
+            b "There's no use trying,"
+            |  Alice said.
+            b  "One can't believe impossible things." 
+          p
+            | 
+            b "I dare say you haven't had much practice,"
+            |  said the Queen.
+        figcaption Lewis Carroll,
+          br
+          | Alice's Adventures In Wonderland And Through The Looking Glass 
+
+    +slide({name: 'theend', header: "Thank you!", shout: true, classes: 'cover label-header'})
+      p.end-link 
+        a.bigger(href="http://bit.ly/fronttalks2017-ETA" target="_blank") bit.ly/fronttalks2017-ETA
+        br
+        | Aleksandra Shinkevich (
+        a(href='https://twitter.com/neesoglasnaja' target="_blank") @neesoglasnaja
+        | )
+      +cover('pictures/blur-cover.jpg')
+    
+    .progress
+    script(src='shower/shower.min.js')
