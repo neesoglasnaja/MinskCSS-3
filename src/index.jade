@@ -33,14 +33,12 @@ html(lang='ru')
         img.logo(src="pictures/minskjs.png")
         img.logo(src="pictures/css-minsk-js.svg")
       +cover('pictures/white-cover.jpg')
-    +slide({})
+    +slide({header: "Кто вы?", classes: "label-header"})    
       +cover('pictures/deadline.jpg')
     +slide({header: "<span class='label'>Как не надо</span>", shout: true})
       +cover('pictures/blur-cover.jpg')
     +slide({})
       +cover('pictures/finger.jpg')
-    +slide({})
-      +cover('pictures/witch.jpg')
     +slide({})
       table
         tbody
@@ -90,22 +88,32 @@ html(lang='ru')
         a(href="https://youtu.be/GIPFLIoeKkg", target="_blank")
     +slide({header: "<span class='label'>Не скажу</span>", shout: true})
       +cover('pictures/i-dont-know.jpg')
+    +slide({header: "<span class='label'>Что оцениваем?</span>", shout: true})
+      +cover('pictures/blur-cover.jpg')
     +slide({header: "Типы оценки", classes: "label-header"})
       ul
         li.next Предварительная
           span.next  — высокоуровневая, где ничего не понятно
+          ul.next
+            li проекты, этапы работ
         li.next Точная
           span.next  — низкоуровневая, где все известно
+          ul.next
+            li конкретные задачи
         li.next Переоценка
           span.next  — изменились требования, поменялся разработчик
-    +slide({header: "Причины ошибок в оценках", classes: "label-header"})
-      ul
+          ul.next
+            li в процессе разработки
+    +slide({header: "<span class='label'>Почему ошибаемся?</span>", shout: true})
+      +cover('pictures/blur-cover.jpg')
+    +slide({header: "Причины ошибок в оценках. Топ 5", classes: "label-header"})
+      ol
         li.next Люди ошибаются
         li.next Неточные требования или неизвестный набор задач
         li.next Не учитываются риски
         li.next Сложно оценить то, чего никогда не делал
         li.next Производительность разработчиков может отличаться разы
-    +slide({header: "<span class='label'>Как делать ЭТО правильно</span>", shout: true, classes: 'cover'})
+    +slide({header: "<span class='label'>Как надо</span>", shout: true, classes: 'cover'})
       +cover('pictures/blur-cover.jpg')
     +slide({header: "Этапы оценки", classes: "label-header"})
       ul
@@ -143,7 +151,6 @@ html(lang='ru')
           td затраченное
         tr
           td оцененное
-    +slide({header: "<span class='label'>Оценки должны что-то значить</span>", shout: true, classes: 'cover'})
     +slide({header: "<span class='label'>Задачи &times; Время &ne; Дедлайн</span>", shout: true, classes: 'cover'})
     +slide({header: "Что забыли?", classes: "label-header"})
       ul
