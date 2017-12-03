@@ -35,16 +35,12 @@ html(lang='ru')
       +cover('pictures/white-cover.jpg')
     +slide({})
       +cover('pictures/deadline.jpg')
+    +slide({header: "<span class='label'>Как не надо</span>", shout: true})
+      +cover('pictures/blur-cover.jpg')
     +slide({})
       +cover('pictures/finger.jpg')
     +slide({})
       +cover('pictures/witch.jpg')
-    +slide({header: "<span class='label'>&times;3</span>", shout: true})
-      +cover('pictures/blur-cover.jpg')
-    +slide({})
-      +cover('pictures/bobuk.png')
-      p
-        a(href="https://youtu.be/XUqiMEh2PMc", target="_blank") Youtube
     +slide({})
       table
         tbody
@@ -79,6 +75,10 @@ html(lang='ru')
       p
         a(href="https://habrahabr.ru/company/ruswizards/blog/151029/", target="_blank") Habr
     +slide({})
+      +cover('pictures/bobuk.png')
+      p
+        a(href="https://youtu.be/XUqiMEh2PMc", target="_blank") Youtube
+    +slide({})
       +cover('pictures/estimation-chain.jpg')
       p
         a(href="https://youtu.be/RbOkgLa1XjM", target="_blank") Youtube
@@ -88,10 +88,8 @@ html(lang='ru')
       +cover('pictures/i-dont-know.jpg')
       p
         a(href="https://youtu.be/GIPFLIoeKkg", target="_blank")
-    +slide({header: "<span class='label'>Время = Жизнь</span>", shout: true})
-      +cover('pictures/blur-cover.jpg')
-    +slide({header: "<span class='label'>Время = Деньги</span>", shout: true})
-      +cover('pictures/blur-cover.jpg')
+    +slide({header: "<span class='label'>Не скажу</span>", shout: true})
+      +cover('pictures/i-dont-know.jpg')
     +slide({header: "Типы оценки", classes: "label-header"})
       ul
         li.next Предварительная
@@ -119,15 +117,15 @@ html(lang='ru')
       +cover('pictures/preparations.jpg')
     +slide({header: "Подготовка", classes: "label-header"})
       ul
-        li.next Оценка проекта? Составьте детальный список функционала проекта
-        li.next Оценка спринта / небольшой части работ? См. выше
-        li.next Тратите много времени на обсуждения? Делайте оценки ДО митинга, а потом просто обсуждайте спорные моменты
+        li.next Составьте детальный структурированный список
+    +slide({header: "<span class='label'>Таблица</span>", shout: true, classes: 'cover'})
     +slide({header: "<span class='label'>Оценка</span>", shout: true, classes: 'cover'})
     +slide({header: "Оценка", classes: "label-header"})
       ul
         li.next Задавайте вопросы
         li.next Декомпозируйте задачи
         li.next Учитывайте риски
+    +slide({header: "<span class='label'>Схема</span>", shout: true, classes: 'cover'})
     +slide({header: "<span class='label'>Разработка</span>", shout: true, classes: 'cover'})
     +slide({header: "Разработка", classes: "label-header"})
       ul
@@ -145,10 +143,17 @@ html(lang='ru')
           td затраченное
         tr
           td оцененное
-    +slide({header: "Схема"})
-      +cover('pictures/schema.jpg')
     +slide({header: "<span class='label'>Оценки должны что-то значить</span>", shout: true, classes: 'cover'})
     +slide({header: "<span class='label'>Задачи &times; Время &ne; Дедлайн</span>", shout: true, classes: 'cover'})
+    +slide({header: "Что забыли?", classes: "label-header"})
+      ul
+        li.next Разработчик никогда не тратит все 100% рабочего времени на задачу
+        ul
+          li.next Интеграции
+          li.next Деплой, git
+          li.next Коммуникации
+          li.next Тестирование
+          li.next Кофе, туалет, проверка почты, общение с коллегами, прокрастинация
     +slide({header: "Хочу больше", classes: "label-header"})
       ul
         li 
