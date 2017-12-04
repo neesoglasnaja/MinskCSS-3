@@ -121,6 +121,9 @@
   padding: 10px 40px;
   font-size: 120px;
 }
+.slide h2 .label.right {
+  float: right;
+}
 .slide p.center {
   text-align: center;
 }

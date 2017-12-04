@@ -39,13 +39,13 @@ html(lang='ru')
       +cover('pictures/blur-cover.jpg')
     +slide({})
       +cover('pictures/finger.jpg')
-    +slide({})
+    +slide({header: 'Специальные таблицы', classes: "label-header"})
       table
         tbody
           tr
-            th Первоначальная
+            th Первоначальная оценка
             th &nbsp;
-            th Действительная
+            th Действительные сроки
           tr
             td 5 минут
             td &rarr;
@@ -70,23 +70,15 @@ html(lang='ru')
             td 1 неделя
             td &rarr;
             td 2-20 дней
-      p
-        a(href="https://habrahabr.ru/company/ruswizards/blog/151029/", target="_blank") Habr
+    +slide({header: 'Метод Бобука-Бацека', classes: "label-header"})
+      +cover('pictures/bobuk.jpg')
     +slide({})
-      +cover('pictures/bobuk.png')
-      p
-        a(href="https://youtu.be/XUqiMEh2PMc", target="_blank") Youtube
-    +slide({})
-      +cover('pictures/estimation-chain.jpg')
-      p
-        a(href="https://youtu.be/RbOkgLa1XjM", target="_blank") Youtube
-    +slide({})
+      +cover('pictures/chain.gif')
+    +slide({header: '«От забора и до обеда»', classes: "label-header"})
       +cover('pictures/from-to.jpg')
     +slide({})
       +cover('pictures/i-dont-know.jpg')
-      p
-        a(href="https://youtu.be/GIPFLIoeKkg", target="_blank")
-    +slide({header: "<span class='label'>Не скажу</span>", shout: true})
+    +slide({header: "<span class='label right'>Я не скажу</span>", shout: true})
       +cover('pictures/i-dont-know.jpg')
     +slide({header: "<span class='label'>Что оцениваем?</span>", shout: true})
       +cover('pictures/blur-cover.jpg')
@@ -104,15 +96,17 @@ html(lang='ru')
           span.next  — изменились требования, поменялся разработчик
           ul.next
             li в процессе разработки
+      +cover('pictures/slides/0.jpg')
     +slide({header: "<span class='label'>Почему ошибаемся?</span>", shout: true})
       +cover('pictures/blur-cover.jpg')
     +slide({header: "Причины ошибок в оценках. Топ 5", classes: "label-header"})
       ol
         li.next Люди ошибаются
         li.next Неточные требования или неизвестный набор задач
-        li.next Не учитываются риски
         li.next Сложно оценить то, чего никогда не делал
+        li.next Не учитываются риски
         li.next Производительность разработчиков может отличаться разы
+      +cover('pictures/slides/1.jpg')
     +slide({header: "<span class='label'>Как надо</span>", shout: true, classes: 'cover'})
       +cover('pictures/blur-cover.jpg')
     +slide({header: "Этапы оценки", classes: "label-header"})
@@ -121,29 +115,39 @@ html(lang='ru')
         li.next Оценка
         li.next Разработка
         li.next Анализ
+      +cover('pictures/slides/2.jpg')
     +slide({header: "<span class='label'>Подготовка</span>", shout: true, classes: 'cover'})
       +cover('pictures/preparations.jpg')
     +slide({header: "Подготовка", classes: "label-header"})
       ul
-        li.next Составьте детальный структурированный список
-    +slide({header: "<span class='label'>Таблица</span>", shout: true, classes: 'cover'})
+        li.next Составьте детальный структурированный список задач
+      p.next 
+        img(src='pictures/table.png', width="800")
     +slide({header: "<span class='label'>Оценка</span>", shout: true, classes: 'cover'})
+      +cover('pictures/whatever.jpg')
     +slide({header: "Оценка", classes: "label-header"})
       ul
         li.next Задавайте вопросы
         li.next Декомпозируйте задачи
         li.next Учитывайте риски
+      +cover('pictures/slides/3.jpg')
     +slide({header: "<span class='label'>Схема</span>", shout: true, classes: 'cover'})
     +slide({header: "<span class='label'>Разработка</span>", shout: true, classes: 'cover'})
+      +cover('pictures/develop.jpg')
     +slide({header: "Разработка", classes: "label-header"})
       ul
         li.next Трекайте время
         li.next Делайте переоценки
+      +cover('pictures/slides/4.jpg')
     +slide({header: "<span class='label'>Анализ</span>", shout: true, classes: 'cover'})
     +slide({header: "Анализ", classes: "label-header"})
       ul
         li.next Анализируйте оцененное и реально затраченное время
         li.next Учитывайте коэффициент погрешности оценок
+      +cover('pictures/slides/5.jpg')
+    +slide({})
+      +cover('pictures/what.jpg')
+
     +slide({header: "Коэффициент погрешности оценок", classes: "label-header"})
       table.formula
         tr
@@ -151,16 +155,19 @@ html(lang='ru')
           td затраченное
         tr
           td оцененное
+      +cover('pictures/slides/6.jpg')
     +slide({header: "<span class='label'>Задачи &times; Время &ne; Дедлайн</span>", shout: true, classes: 'cover'})
+      +cover('pictures/blur-cover.jpg')
     +slide({header: "Что забыли?", classes: "label-header"})
       ul
-        li.next Разработчик никогда не тратит все 100% рабочего времени на задачу
+        li.next На программирование не уходит 100% рабочего времени
         ul
           li.next Интеграции
           li.next Деплой, git
           li.next Коммуникации
           li.next Тестирование
           li.next Кофе, туалет, проверка почты, общение с коллегами, прокрастинация
+      +cover('pictures/slides/7.jpg')
     +slide({header: "Хочу больше", classes: "label-header"})
       ul
         li 
@@ -178,6 +185,12 @@ html(lang='ru')
         li  
           a(href="https://habrahabr.ru/post/308494/" target="_blank") Как дать адекватную оценку времени, когда неопределённость бьёт по башке
           |  (Хабр) 
+        li
+          a(href="https://youtu.be/XUqiMEh2PMc", target="_blank") Метод определения сроков выполнения проекта по Бобуку-Бацеку
+          |  (Youtube)
+        li
+          a(href="https://youtu.be/GIPFLIoeKkg", target="_blank") Тупняк как чума 21 века и что с этим делать, Максим Дорофеев
+      +cover('pictures/slides/8.jpg')
     +slide({header: "Как итог", classes: 'label-header'})
       figure
         blockquote 
