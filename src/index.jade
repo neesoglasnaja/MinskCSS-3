@@ -156,7 +156,7 @@ html(lang='ru')
       +cover('pictures/develop.jpg')
     +slide({header: "Разработка", classes: "label-header"})
       ul
-        li.next Трекайте время
+        li.next Логируйте время
         li.next Делайте переоценки
       +cover('pictures/slides/4.jpg')
     +slide({header: "<span class='label'>Анализ</span>", shout: true, classes: 'cover'})
@@ -189,7 +189,10 @@ html(lang='ru')
           li.next Кофе, туалет, проверка почты, общение с коллегами, прокрастинация
       +cover('pictures/slides/7.jpg')
     +slide({header: "Хочу больше", classes: "label-header"})
-      ul
+      ul.smaller
+        li
+          a(href="https://lovata.com/blog/guide-to-time-estimation-project-estimation-techniques-tips-tricks.html", target="_blank") Guide to Time Estimation: Project Estimation Techniques, Tips & Tricks
+          |  (EN)
         li 
           a(href="https://habrahabr.ru/company/ruswizards/blog/151029/" target="_blank") Реальная оценка или почему наступают дедлайны
           |  (Хабр) 
@@ -210,6 +213,7 @@ html(lang='ru')
           |  (Youtube)
         li
           a(href="https://youtu.be/GIPFLIoeKkg", target="_blank") Тупняк как чума 21 века и что с этим делать, Максим Дорофеев
+          |  (Youtube)
       +cover('pictures/slides/8.jpg')
     +slide({header: "Как итог", classes: 'label-header'})
       figure
